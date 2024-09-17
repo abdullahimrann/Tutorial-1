@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            height: 100vh;
+            font-size: 2rem;
+            color: black; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero img {
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+        .section {
+            padding: 50px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .work-experience {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .work-experience .job {
+            width: 45%;
+            background-color: #f4f4f4;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact form input,
+        .contact form textarea {
+            width: 300px;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .contact form button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#work">Work Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <h1>Welcome to Abdullah's Portfolio</h1>
+        <p>I'm Abdullah Imran, a second year Software Engineering Student at Western University and currently pursuing my passion of software development.</p>
+        <!-- Add your image here -->
+        <img src="myImage.jpg" alt="Your Photo">
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hi! I'm Abdullah, a passionate Software Engineering Student. I have experience in many programming languages, autoCAD, and a lot of different form of cirucit systems such as Arduino. I enjoy building and programming technological projects such as a robotic arm I made from scratch. Besides the engineering aspect of my personality, I am huge soccer fan and played it on a competetive level for many years. Besides soccer I also love to play spikeball and wrestle and competed for those sports aswell. My goals and ambition is to grow big time in the field of software engineering and use it to bring many signifigant developments to human life. </p>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work" class="section">
+        <h2>Work Experience</h2>
+        <div class="work-experience">
+            <div class="job">
+                <h3>FIRST Robotics Team Lead</h3>
+                <p>Lynx 6378 Robotics - 10/2022 - 03/2023</p>
+                <p>Worked diligently as the Electrical Team Lead as well as an active contributor to the programming team for Lynx Robotics to prepare for the FRC competitions. Lead the team through troubleshooting, ideation, electrical assembly and programming of the robot. Developed many important leadership and technical skills, especially in the programming and electrical aspects through the countless hours of dedication to the team</p>
+            </div>
+            <div class="job">
+                <h3>DQ Crew Memeber</h3>
+                <p>Dairy Queen - 07/2022 - 08/2022</p>
+                <p>Diligently prepared ice cream, food and other snacks for customers while treating them with a positive and friendly attitude. Worked a cash register, answered customer questions and kept stations stocked before and during the arrival of customers. Gained a lot of experience in customer service, organizing inventory, prepping food and working under pressure all while abiding by safety and health protocols</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Abdullah Imran. All rights reserved.</p>
+        <p>Check out my Instagram! @abdullah.imrann</p>
+        <p>Connect with me on Linkedin aswell</p>
+        <a href="https://www.linkedin.com/in/aimran56/">Abdullah Imran's Linkedin</a>
+    </footer>
+
+</body>
+</html>
